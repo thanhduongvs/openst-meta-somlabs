@@ -287,7 +287,7 @@
 
 	sdmmc2_pins_mx: sdmmc2_mx-0 {
 		pins1 {
-			pinmux = <STM32_PINMUX('G', 6, AF10)>; /* SDMMC2_CMD */
+			pinmux = <STM32_PINMUX('G', 6, AF10)>, /* SDMMC2_CMD */
 					 <STM32_PINMUX('B', 14, AF9)>, /* SDMMC2_D0 */
 					 <STM32_PINMUX('B', 15, AF9)>, /* SDMMC2_D1 */
 					 <STM32_PINMUX('B', 3, AF9)>,  /* SDMMC2_D2 */
@@ -338,8 +338,8 @@
 
 	sdmmc2_sleep_pins_mx: sdmmc2_sleep_mx-0 {
 		pins {
-			pinmux = <STM32_PINMUX('E', 3, AF9)>;  /* SDMMC2_CK */
-					 <STM32_PINMUX('G', 6, AF10)>; /* SDMMC2_CMD */
+			pinmux = <STM32_PINMUX('E', 3, AF9)>,  /* SDMMC2_CK */
+					 <STM32_PINMUX('G', 6, AF10)>, /* SDMMC2_CMD */
 					 <STM32_PINMUX('B', 14, AF9)>, /* SDMMC2_D0 */
 					 <STM32_PINMUX('B', 15, AF9)>, /* SDMMC2_D1 */
 					 <STM32_PINMUX('B', 3, AF9)>,  /* SDMMC2_D2 */
